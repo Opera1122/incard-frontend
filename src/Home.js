@@ -6,7 +6,7 @@ import Footer from './Footer';
 function Home() {
     return (
 	    <div id="wrapper">
-			<Header />
+			{/* <Header /> */}
 			<div id="introBackground">
 				<div id="intro">
 					<h1>About Invitation Card</h1>
