@@ -1,9 +1,12 @@
 import React from "react";
 import "./Home.css";
+import Header from './Header';
+import Footer from './Footer';
 
 function Home() {
     return (
 	    <div id="wrapper">
+			<Header />
 			<div id="introBackground">
 				<div id="intro">
 					<h1>About Invitation Card</h1>
@@ -27,6 +30,7 @@ function Home() {
 					</section>
 				</div>
 			</div>
+			<Footer />
 		</div>
     );
   }
