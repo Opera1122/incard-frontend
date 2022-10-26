@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -7,6 +8,7 @@ function Header() {
 		<header id="leftContents">
 			<nav>
 				<a href="login.jsp"><li>로그인</li></a>
+				{/* <Link to="경로">링크명</Link> */}
 				<a href="signUp.jsp"><li>회원가입</li></a>
 			</nav>
 			<ul id="topMenu">
