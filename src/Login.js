@@ -1,22 +1,23 @@
 import React from 'react';
-import "./Login.css";
+import styles from "./Login.module.css";
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
-        <div id="wrapper">
-			<div id="background">
-				<div id="title">
+		<div id={styles.wrapper}>
+			<div id={styles.background}>
+				<div id={styles.title}>
 					<h1>로그인</h1>
 					<p>In Card 홈페이지에 방문해주셔서 감사합니다.</p>
 				</div>
-				<div id="loginBackground">
+				<div id={styles.loginBackground}>
 					<form>
-        	    		<input type="text" placeholder="아이디" id="cust_id" class="field"/><br/>
-            			<input type="password" placeholder="비밀번호" id="cust_pw" class="field"/><br/>
-          	  			<input type="checkbox" id="checkBox"/>&nbsp;아이디 저장<br/>
-            			<input type="submit" value="로그인" id="loginButton"/>
+        	    		<input type="text" placeholder="아이디" id={styles.cust_id} class={styles.field}/><br/>
+            			<input type="password" placeholder="비밀번호" id={styles.cust_pw} class={styles.field}/><br/>
+          	  			<input type="checkbox" id={styles.checkBox}/>&nbsp;아이디 저장<br/>
+            			<input type="submit" value="로그인" id={styles.loginButton}/>
           			</form>
-          			<a href="signUp.jsp"><div id="signupButton">회원가입</div></a>
+          			<Link to="/SignUp"><div id={styles.signupButton}>회원가입</div></Link>
 				</div>
 			</div>
 		</div>
